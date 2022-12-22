@@ -11,7 +11,7 @@
 		Welcome to Java	
 </b>
 <b>
-visit <a href="http://www.seleniumexpress.com"></a>
+visit <a href="http://www.seleniumexpress.com">seleniemexpress.com for more info</a>
 </b>
 </body>
 </html>
