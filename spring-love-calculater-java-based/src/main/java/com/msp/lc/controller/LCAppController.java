@@ -21,5 +21,7 @@ public class LCAppController {
 		
 		return "result-page";
 	}
+	
+	
 
 }
