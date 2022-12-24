@@ -14,10 +14,14 @@
 	Name : ${userReg.name}<br>
 	User Name : ${userReg.userName}<br>
 	Password : ${userReg.password}<br>
-	Country Name : ${userReg.countryName}<br> Hobbies :
+	Country Name : ${userReg.countryName}<br> 
+	Hobbies :
 	 
-	<c:fo
+	<c:forEach var="temp" items="${userReg.hobbies}">
+	${temp}
+	</c:forEach>
 	<br>
+	
 	Gender : ${userReg.gender}<br>
 	
 </body>

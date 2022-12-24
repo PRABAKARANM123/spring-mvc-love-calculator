@@ -8,6 +8,19 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>HomePage</title>
+
+<script type="text/javascript">
+function validateUserName() {
+	var userName = document.getElementById('yn').value;
+	if(userName.length<1){
+		alert("your name should have atleast one char");
+	return true;
+	}
+	
+}
+
+</script>
+
 </head>
 <body>
 	<h1 align="center">Love Calculator</h1>
@@ -16,7 +29,8 @@
 	<div align="center">
 	<p>
 	<label for="yn">Your Name</label>
-	<form:input  id="yu" path="userName"/>
+	<form:input id="yn" path="userName"/>
+	<form:errors path="userName"></form:errors>
 	</p>
 	<p>
 	<label for="cn" >Crush Name</label>
