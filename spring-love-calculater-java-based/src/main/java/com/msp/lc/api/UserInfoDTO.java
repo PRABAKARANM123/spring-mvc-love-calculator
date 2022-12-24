@@ -1,8 +1,8 @@
 package com.msp.lc.api;
 
 public class UserInfoDTO {
-	private String userName;
-	private String crushName;
+	private String userName = "Mr X";
+	private String crushName = "Mis y";
 	
 	public String getUserName() {
 		return userName;

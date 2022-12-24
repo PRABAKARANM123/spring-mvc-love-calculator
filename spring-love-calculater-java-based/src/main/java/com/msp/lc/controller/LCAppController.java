@@ -10,7 +10,9 @@ import com.msp.lc.api.UserInfoDTO;
 public class LCAppController {
 	
 	@RequestMapping("/")
-	public String homePage() {
+	public String homePage(Model model) {
+		UserInfoDTO userInfo = new UserInfoDTO();
+		model.addAttribute("userInfo", userInfo);
 		return "home-page";
 	}
 	
