@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import com.msp.lc.api.UserInfoDTO;
 @Controller
 public class LCAppController {
 	
@@ -13,10 +15,8 @@ public class LCAppController {
 	}
 	
 	@RequestMapping("/proces-homepage")
-	public String resultPage(@RequestParam("userName") String userName1,
-							 @RequestParam("crushName") String crushName1, Model model) {
-		model.addAttribute("userName", userName1);
-		model.addAttribute("crushName", crushName1);
+	public String resultPage(UserInfoDTO userInfoDTO, Model model) {
+		model.addAttribute("userinfo", userInfoDTO);
 		
 		return "result-page";
 	}

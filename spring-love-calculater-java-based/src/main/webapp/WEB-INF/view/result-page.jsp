@@ -9,7 +9,7 @@
 <body>
 	<h1>Love Calculator</h1>
 	<hr>
-	<p>User Name Is : ${userName}</p>
-	<p> Crush Name is : ${crushName}</p>
+	<p>User Name Is : ${userinfo.userName}</p>
+	<p> Crush Name is : ${userinfo.crushName}</p>
 </body>
 </html>
