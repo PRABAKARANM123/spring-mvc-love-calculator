@@ -10,14 +10,15 @@ import com.msp.lc.api.UserRegistrationDTO;
 public class RegistratonController {
 	@RequestMapping("/register")
 	public String showRegistrationPage(@ModelAttribute("userRege") UserRegistrationDTO dto) {
-		dto.setName("Prabakaran");
-		dto.setUserName("msp123");
+		System.out.println("Inside showRegistrationPage method");
 		
 		return "user-registration-page";
 	}
 	
 	@RequestMapping("/registration-sucess")
 	public String processUserReg(@ModelAttribute("userReg") UserRegistrationDTO dto) {
+		System.out.println("Inside processUserReg method");
+
 		return "registration-sucess";
 	}
 

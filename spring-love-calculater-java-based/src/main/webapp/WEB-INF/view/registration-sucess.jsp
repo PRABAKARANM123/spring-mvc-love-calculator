@@ -22,7 +22,11 @@
 	</c:forEach>
 	<br>
 	
-	Gender : ${userReg.gender}<br>
+	Gender : ${userReg.gender}
+	<br/>
+	Email : ${userReg.communicationDTO.email}
+	<br/>
+	Phone : ${userReg.communicationDTO.phone}
 	
 </body>
 </html>

@@ -7,6 +7,7 @@ public class UserRegistrationDTO {
 	private String countryName;
 	private String[] hobbies; // print the string of array in  
 	private String gender;    // jsp page add dependency called 'jstl core dependency'
+	private CommunicationDTO communicationDTO;
 	
 	public String getName() {
 		return name;
@@ -43,6 +44,12 @@ public class UserRegistrationDTO {
 	}
 	public void setGender(String gender) {
 		this.gender = gender;
+	}
+	public CommunicationDTO getCommunicationDTO() {
+		return communicationDTO;
+	}
+	public void setCommunicationDTO(CommunicationDTO communicationDTO) {
+		this.communicationDTO = communicationDTO;
 	}
 	
 	

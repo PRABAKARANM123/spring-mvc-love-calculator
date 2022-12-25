@@ -48,8 +48,17 @@
 	<label>Gender : </label>
 		Male : <form:radiobutton path="gender" value="male"/>
 		Female : <form:radiobutton path="gender" value="female"/>
-		<br>
+		<br/>
+		</div>		
 		
+		<div align="center">
+		<h3>Communication</h3>
+		<label>Email</label>
+		<form:input path="communicationDTO.email"/>
+		<label>Phone</label>
+		<form:input path="communicationDTO.phone"/>
+		<br/>
+			
 	<input type="submit" value="register">
 	
 	</div> 
